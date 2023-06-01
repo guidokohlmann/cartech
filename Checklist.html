@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="Checklist.js"></script>
     <link href="Checklist.css" rel="stylesheet" />
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form id="checkboxForm">
-        <div id="checkboxList">
-          <input type="checkbox" id="item1" value="Item 1">
-          <label for="item1">Item 1</label>
-          <input type="checkbox" id="item2" value="Item 2">
-          <label for="item2">Item 2</label>
-          <!-- Add more checkbox items as needed -->
-        </div>
+    <fieldset class="fieldset">
+        <legend>Ingredients</legend>
+        <input id="checkbox12" value="Apple" class="cb" type="checkbox">
+        <label for="checkbox12">Apple</label>
+        <input id="checkbox22" value="Orange" class="cb" type="checkbox">
+        <label for="checkbox22">Orange</label>
+        <input id="checkbox32" value="Cinnamon" class="cb" type="checkbox">
+        <label for="checkbox32">Cinnamon</label>
+      </fieldset>
       
-        <button type="button" id="addItemBtn">Add Item</button>
-        <button type="button" id="removeItemBtn">Remove Item</button>
+      <h4>Lists:</h4>
+      <ul>
       
-        <div id="items">
-            <ul id="listItems">
-            </ul>
-      </form>
+      </ul>
+<script>
+$('.cb').click(function() {
+$('ul').html("");
+$(".cb").each(function(){
+    if($(this).is(":checked")){
+      $('ul').append('<li><input type="checkbox">'+$(this).val()+'</li>')
+    }
+});
+});
+</script>             
                              
 </body>
 </html>
