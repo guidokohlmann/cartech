@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Home.js"></script>
+    <link href="Home.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-        <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
-    </div>
-
-<!-- Checked checkbox -->   
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked/>
-        <label class="form-check-label" for="flexCheckChecked">Checked checkbox</label>
-    </div>
+    <form id="checkboxForm">
+        <div id="checkboxList">
+          <input type="checkbox" id="item1" value="Item 1">
+          <label for="item1">Item 1</label>
+          <input type="checkbox" id="item2" value="Item 2">
+          <label for="item2">Item 2</label>
+          <!-- Add more checkbox items as needed -->
+        </div>
+      
+        <button type="button" id="addItemBtn">Add Item</button>
+        <button type="button" id="removeItemBtn">Remove Item</button>
+      
+        <div id="items">
+            <ul id="listItems">
+            </ul>
+      </form>
+                             
 </body>
 </html>
