@@ -1,3 +1,11 @@
 ul{
   list-style-type: none
 }
+
+legend{
+  color: red;
+}
+
+h4{
+  color: red;
+}
