@@ -1,4 +1,6 @@
 input[class='checkgreen'] {
+  border-radius: 2px;
+  margin-bottom: -0.1%;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -11,16 +13,19 @@ input[class='checkgreen'] {
 
 .checkgreen:checked:before{
   background-color: green;
-  content: "v";
+  content: "✔";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;
+  border-radius: 2px;
 }
 
 input[class='checkorange'] {
+  border-radius: 2px;
+  margin-bottom: -0.1%;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -40,9 +45,12 @@ input[class='checkorange'] {
   transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;
+  border-radius: 2px;
 }
 
 input[class='checkred'] {
+  border-radius: 2px;
+  margin-bottom: -0.1%;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -55,13 +63,14 @@ input[class='checkred'] {
 
 .checkred:checked:before{
   background-color: red;
-  content: "X";
+  content: "✖";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;
+  border-radius: 2px;
 }
 
 ul{
