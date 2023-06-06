@@ -1,3 +1,69 @@
+input[class='checkgreen'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+}
+
+.checkgreen:checked:before{
+  background-color: green;
+  content: "v";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+}
+
+input[class='checkorange'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+}
+
+.checkorange:checked:before{
+  background-color: orange;
+  content: "!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+}
+
+input[class='checkred'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+}
+
+.checkred:checked:before{
+  background-color: red;
+  content: "X";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+}
+
 ul{
   list-style-type: none
 }

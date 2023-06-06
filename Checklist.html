@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Checklist.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Cartech</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
 <body>
     <fieldset class="fieldset">
-        <legend>Ingredients</legend>
-        <input id="checkbox12" value="Apple" class="cb" type="checkbox">
+        <legend>Onderdelen</legend>
+        <input id="checkbox12" value="Moer" class="cb" type="checkbox">
         <label for="checkbox12">Moer</label>
-        <input id="checkbox22" value="Orange" class="cb" type="checkbox">
+        <input id="checkbox22" value="Bout" class="cb" type="checkbox">
         <label for="checkbox22">Bout</label>
-        <input id="checkbox32" value="Cinnamon" class="cb" type="checkbox">
+        <input id="checkbox32" value="Schroef" class="cb" type="checkbox">
         <label for="checkbox32">Schroef</label>
       </fieldset>
       
-      <h4>Lists:</h4>
+      <h4>Checklist:</h4>
       <ul>
       
       </ul>
@@ -28,7 +28,7 @@ $('.cb').click(function() {
 $('ul').html("");
 $(".cb").each(function(){
     if($(this).is(":checked")){
-      $('ul').append('<li><input type="checkbox">'+$(this).val()+'</li>')
+      $('ul').append('<li><input type="checkbox" class="checkred"> <input type="checkbox" class="checkorange"> <input type="checkbox" class="checkgreen">'+$(this).val()+'</li>')
     }
 });
 });
