@@ -11,31 +11,63 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <fieldset class="fieldset">
-        <legend>Onderdelen</legend>
-        <input id="checkbox12" value="Reparatie" class="cb" type="checkbox">
-        <label for="checkbox12">Reparatie</label>
-        <input id="checkbox22" value="Onderhoud" class="cb" type="checkbox">
-        <label for="checkbox22">Onderhoud</label>
-        <input id="checkbox32" value="Storing" class="cb" type="checkbox">
-        <label for="checkbox32">Storing</label>
-        <input id="checkbox32" value="APK" class="cb" type="checkbox">
-        <label for="checkbox32">APK</label>
-    </fieldset>
-      
-    <h4>Checklist:</h4>
-    <ul id="checklist"></ul>
+<fieldset class="fieldset">
+  <legend>Onderdelen</legend>
+  <input id="checkbox12" value="Reparatie" class="cb" type="checkbox">
+  <label for="checkbox12">Reparatie</label>
+  <input id="checkbox22" value="Onderhoud" class="cb" type="checkbox">
+  <label for="checkbox22">Onderhoud</label>
+  <input id="checkbox32" value="Storing" class="cb" type="checkbox">
+  <label for="checkbox32">Storing</label>
+  <input id="checkbox42" value="APK" class="cb" type="checkbox">
+  <label for="checkbox42">APK</label>
+</fieldset>
 
-    <script>
-    $('.cb').click(function() {
-        $('ul').html("");
-        $(".cb").each(function(){
-            if($(this).is(":checked")){
-                $('ul').append('<li><input type="checkbox" class="checkred"> <input type="checkbox" class="checkorange"> <input type="checkbox" class="checkgreen">'+$(this).val()+'</li>');
-            }
-        });
+<h4>Checklist:</h4>
+<ul id="checklist"></ul>
+
+<script>
+  // Function to update the checklist
+  function updateChecklist() {
+    $('ul').html("");
+    $(".cb").each(function() {
+      if ($(this).is(":checked")) {
+        $('ul').append('<li><input type="checkbox" class="checkred"> <input type="checkbox" class="checkorange"> <input type="checkbox" class="checkgreen" checked>'+$(this).val()+'</li>');
+      }
     });
-    </script>             
+  }
+
+  // Function to save checkbox state
+  function saveCheckboxState() {
+    var checkboxState = {};
+    $(".cb").each(function() {
+      checkboxState[$(this).attr("id")] = $(this).is(":checked");
+    });
+    localStorage.setItem("checkboxState", JSON.stringify(checkboxState));
+  }
+
+  // Function to load checkbox state
+  function loadCheckboxState() {
+    var savedCheckboxState = JSON.parse(localStorage.getItem("checkboxState"));
+    if (savedCheckboxState) {
+      for (var checkboxId in savedCheckboxState) {
+        $("#" + checkboxId).prop("checked", savedCheckboxState[checkboxId]);
+      }
+    }
+  }
+
+  // Click event handler for checkboxes
+  $('.cb').click(function() {
+    updateChecklist();
+    saveCheckboxState();
+  });
+
+  // Load checkbox state when the page loads
+  $(document).ready(function() {
+    loadCheckboxState();
+    updateChecklist();
+  });
+</script>
 
     <!-- Generate File Button -->
     <button id="generate-pdf">Generate PDF</button>
