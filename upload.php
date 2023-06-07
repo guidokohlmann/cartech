@@ -27,4 +27,3 @@ include 'library/closedb.php';
 echo "<br>File $fileName uploaded<br>";
 }
 ?>
-*
