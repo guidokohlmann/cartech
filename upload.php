@@ -1,30 +1,34 @@
 <?php
 if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 {
-$fileName = $_FILES['userfile']['name'];
-$tmpName  = $_FILES['userfile']['tmp_name'];
-$fileSize = $_FILES['userfile']['size'];
-$fileType = $_FILES['userfile']['type'];
+    $fileName = $_FILES['userfile']['name'];
+    $tmpName  = $_FILES['userfile']['tmp_name'];
+    $fileSize = $_FILES['userfile']['size'];
+    $fileType = $_FILES['userfile']['type'];
 
-$fp      = fopen($tmpName, 'r');
-$content = fread($fp, filesize($tmpName));
-$content = addslashes($content);
-fclose($fp);
+    $content = file_get_contents($tmpName);
+    $content = addslashes($content);
 
-if(!get_magic_quotes_gpc())
-{
-    $fileName = addslashes($fileName);
-}
-include 'library/config.php';
-include 'library/opendb.php';
+    include 'library/config.php';
+    include 'library/opendb.php';
 
-$query = "INSERT INTO upload (name, size, type, content ) ".
-"VALUES ('$fileName', '$fileSize', '$fileType', '$content')";
+    // Prepare the query using PDO
+    $query = "INSERT INTO upload (name, size, type, content) VALUES (:name, :size, :type, :content)";
+    $stmt = $pdo->prepare($query);
 
-mysql_query($query) or die('Error, query failed');
-include 'library/closedb.php';
+    // Bind the parameters
+    $stmt->bindParam(':name', $fileName);
+    $stmt->bindParam(':size', $fileSize);
+    $stmt->bindParam(':type', $fileType);
+    $stmt->bindParam(':content', $content, PDO::PARAM_LOB);
 
-echo "<br>File $fileName uploaded<br>";
+    // Execute the query
+    if ($stmt->execute()) {
+        echo "<br>File $fileName uploaded<br>";
+    } else {
+        die('Error, query failed');
+    }
+
+    include 'library/closedb.php';
 }
 ?>
-*
