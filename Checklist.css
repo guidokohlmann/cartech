@@ -21,6 +21,9 @@ input[class='checkgreen'] {
   width: 16px;
   height: 16px;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[class='checkorange'] {
@@ -46,6 +49,9 @@ input[class='checkorange'] {
   width: 16px;
   height: 16px;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[class='checkred'] {
@@ -71,6 +77,9 @@ input[class='checkred'] {
   width: 16px;
   height: 16px;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul{
