@@ -13,61 +13,137 @@
 </head>
 <body>
 <fieldset class="fieldset">
-  <legend>Onderdelen</legend>
-  <input id="checkbox12" value="Reparatie" class="cb" type="checkbox">
-  <label for="checkbox12">Reparatie</label>
-  <input id="checkbox22" value="Onderhoud" class="cb" type="checkbox">
-  <label for="checkbox22">Onderhoud</label>
-  <input id="checkbox32" value="Storing" class="cb" type="checkbox">
-  <label for="checkbox32">Storing</label>
-  <input id="checkbox42" value="APK" class="cb" type="checkbox">
-  <label for="checkbox42">APK</label>
-</fieldset>
+    <legend>Toevoegen</legend>
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+      <span class='button1'>APK</span>
+      <ul class="items">
+        <li><input value="Reparatie" class="cb" type="checkbox" /><label for="checkbox32">Reparatie</label> </li>
+        <li><input value="Onderhoud" class="cb" type="checkbox" /><label for="checkbox22">Onderhoud</label> </li>
+        <li><input value="Storing" class="cb" type="checkbox" /><label for="checkbox32">Storing</label> </li>
+      </ul>
+    </div>
+    <div id="list2" class="dropdown-check-list" tabindex="100">
+      <span class='button1'>Proefrit</span>
+      <ul class="items">
+        <li><input value="Afstandsbediening/sleutelhuis" class="cb" type="checkbox" /><label for="checkbox32">Afstandsbediening/sleutelhuis</label> </li>
+        <li><input value="Rijeigenschappen" class="cb" type="checkbox" /><label for="checkbox22">Rijeigenschappen</label> </li>
+        <li><input value="Trillingen" class="cb" type="checkbox" /><label for="checkbox32">Trillingen</label> </li>
+        <li><input value="Motor" class="cb" type="checkbox" /><label for="checkbox32">Motor</label> </li>
+        <li><input value="Koppeling en versnellingsbak" class="cb" type="checkbox" /><label for="checkbox22">Koppeling en versnellingsbak</label> </li>
+        <li><input value="Remmen" class="cb" type="checkbox" /><label for="checkbox32">Remmen</label> </li>
+        <li><input value="Verlichting" class="cb" type="checkbox" /><label for="checkbox32">Verlichting</label> </li>
+      </ul>
+    </div>
+    <div id="list3" class="dropdown-check-list" tabindex="100">
+      <span class='button1'>In en om de auto</span>
+      <ul class="items">
+        <li><input value="Remmencontrole rollentestbank" class="cb" type="checkbox" /><label for="checkbox32">Remmencontrole rollentestbank</label> </li>
+        <li><input value="EOBD, 4gas, Roetmeting of Deeltjestest" class="cb" type="checkbox" /><label for="checkbox22">EOBD, 4gas, Roetmeting of Deeltjestest</label> </li>
+        <li><input value="Uitlezen op foutcodes (bij brandend lampje)" class="cb" type="checkbox" /><label for="checkbox32">Uitlezen op foutcodes (bij brandend lampje)</label> </li>
+        <li><input value="Tijdklok goed instellen" class="cb" type="checkbox" /><label for="checkbox32">Tijdklok goed instellen</label> </li>
+        <li><input value="AdBleu controleren (eventueel bijvullen)" class="cb" type="checkbox" /><label for="checkbox22">AdBleu controleren (eventueel bijvullen)</label> </li>
+        <li><input value="Verwarming, ventilatie, airconditioning: controleer werking" class="cb" type="checkbox" /><label for="checkbox32">Verwarming, ventilatie, airconditioning: controleer werking</label> </li>
+        <li><input value="Temperatuurmeting airco: uitstroom en omgeving noteren" class="cb" type="checkbox" /><label for="checkbox32">Temperatuurmeting airco: uitstroom en omgeving noteren</label> </li>
+        <li><input value=" Voorruit: ontwaseming controleren" class="cb" type="checkbox" /><label for="checkbox32"> Voorruit: ontwaseming controleren</label> </li>
+        <li><input value="Voorruit en spiegels: controleer op schade (barst/ster), staat en werking" class="cb" type="checkbox" /><label for="checkbox22">Voorruit en spiegels: controleer op schade (barst/ster), staat en werking </label> </li>
+        <li><input value="Verlichting voor- en achterzijde: controleer werking en beeld/afstelling" class="cb" type="checkbox" /><label for="checkbox32">Verlichting voor- en achterzijde: controleer werking en beeld/afstelling</label> </li>
+        <li><input value="Instrumenten, controlelampjes, binnenverlichting: controleer werking" class="cb" type="checkbox" /><label for="checkbox32">MotInstrumenten, controlelampjes, binnenverlichting: controleer werkingor</label> </li>
+        <li><input value="Ruitenwissers, sproeiers: controleer staat en werking" class="cb" type="checkbox" /><label for="checkbox22">Ruitenwissers, sproeiers: controleer staat en werking</label> </li>
+        <li><input value="Claxon: werking controleren" class="cb" type="checkbox" /><label for="checkbox32">Claxon: werking controleren</label> </li>
+        <li><input value="Pedaalrubbers/matten: controleren" class="cb" type="checkbox" /><label for="checkbox32">Pedaalrubbers/matten: controleren</label> </li>
+        <li><input value="Binnenzijde en gordels: bevestiging/staat controleren voorstoelen, achterbank en hemel" class="cb" type="checkbox" /><label for="checkbox32">Binnenzijde en gordels: bevestiging/staat controleren voorstoelen, achterbank en hemel</label> </li>
+        <li><input value="Ruitbediening: controleren" class="cb" type="checkbox" /><label for="checkbox22">Ruitbediening: controleren</label> </li>
+        <li><input value="Life-hamer: controleren aanwezigheid/monteren indien nodig" class="cb" type="checkbox" /><label for="checkbox32">Life-hamer: controleren aanwezigheid/monteren indien nodig</label> </li>
+        <li><input value="Interieurfilter: controleren" class="cb" type="checkbox" /><label for="checkbox32">Interieurfilter: controleren</label> </li>
+        <li><input value="Scharnieren, vanger, rubbers en sloten: controleren en smeren waar nodig (motorkap, portieren, achterklep)" class="cb" type="checkbox" /><label for="checkbox22">Scharnieren, vanger, rubbers en sloten: controleren en smeren waar nodig (motorkap, portieren, achterklep)</label> </li>
+        <li><input value="RemCarrosserie en chassis: visuele controle staat automen" class="cb" type="checkbox" /><label for="checkbox32">Carrosserie en chassis: visuele controle staat auto</label> </li>
+        <li><input value="Reservewiel: aanwezigheid, staat en bandenspanning controleren" class="cb" type="checkbox" /><label for="checkbox32">Reservewiel: aanwezigheid, staat en bandenspanning controleren</label> </li>
+        <li><input value="Profieldiepte: invullen" class="cb" type="checkbox" /><label for="checkbox22">Profieldiepte: invullen</label> </li>
+        <li><input value="Reparatieset banden: controleren op houdbaarheid" class="cb" type="checkbox" /><label for="checkbox32">Reparatieset banden: controleren op houdbaarheid</label> </li>
+        <li><input value="Kentekenplaten en houder: controleer de leesbaarheid, staat en bevestiging" class="cb" type="checkbox" /><label for="checkbox32">Kentekenplaten en houder: controleer de leesbaarheid, staat en bevestiging</label> </li>
+      </ul>
+    </div>
+  </fieldset>
 
-<h4>Checklist:</h4>
-<ul id="checklist"></ul>
+  <h4>Checklist:</h4>
+  <ul id="checklist"></ul>
 
 <script>
-  // Function to update the checklist
-  function updateChecklist() {
-    $('ul').html("");
-    $(".cb").each(function() {
-      if ($(this).is(":checked")) {
-        $('ul').append('<li><input type="checkbox" class="checkred"> <input type="checkbox" class="checkorange"> <input type="checkbox" class="checkgreen" checked>'+$(this).val()+'</li>');
-      }
-    });
-  }
+//dropdown
 
-  // Function to save checkbox state
-  function saveCheckboxState() {
-    var checkboxState = {};
-    $(".cb").each(function() {
-      checkboxState[$(this).attr("id")] = $(this).is(":checked");
-    });
-    localStorage.setItem("checkboxState", JSON.stringify(checkboxState));
-  }
+$('#list1 span').click(function(){
+ $('#list1 ul').toggle();
+});
 
-  // Function to load checkbox state
-  function loadCheckboxState() {
-    var savedCheckboxState = JSON.parse(localStorage.getItem("checkboxState"));
-    if (savedCheckboxState) {
-      for (var checkboxId in savedCheckboxState) {
-        $("#" + checkboxId).prop("checked", savedCheckboxState[checkboxId]);
-      }
+$('#list2 span').click(function(){
+ $('#list2 ul').toggle();
+});
+
+$('#list3 span').click(function(){
+ $('#list3 ul').toggle();
+});
+
+// Function to update the checklist
+function updateChecklist() {
+  $('#checklist').empty();
+  $(".cb").each(function() {
+    var checkboxId = $(this).attr("id");
+    var isChecked = $(this).is(":checked");
+
+    if (isChecked) {
+      $('#checklist').append('<li><input type="checkbox" class="checkred"> <input type="checkbox" class="checkorange"> <input type="checkbox" class="checkgreen">' + $(this).val() + '</li>');
     }
+
+    // Update the corresponding checkbox in the fieldset
+    $("#" + checkboxId).prop("checked", isChecked);
+  });
+
+  // Save checkbox state in the localStorage
+  saveCheckboxState();
+}
+
+
+// Function to save the checkbox state in localStorage
+function saveCheckboxState() {
+  var checkboxState = {};
+
+  $(".cb").each(function() {
+    var checkboxId = $(this).attr("id");
+    var isChecked = $(this).is(":checked");
+
+    checkboxState[checkboxId] = isChecked;
+  });
+
+  localStorage.setItem("checkboxState", JSON.stringify(checkboxState));
+}
+
+// Function to restore the checkbox state from localStorage
+function restoreCheckboxState() {
+  var checkboxState = localStorage.getItem("checkboxState");
+
+  if (checkboxState) {
+    checkboxState = JSON.parse(checkboxState);
+
+    $(".cb").each(function() {
+      var checkboxId = $(this).attr("id");
+
+      if (checkboxState.hasOwnProperty(checkboxId)) {
+        var isChecked = checkboxState[checkboxId];
+        $("#" + checkboxId).prop("checked", isChecked);
+      } else {
+        $("#" + checkboxId).prop("checked", false);
+      }
+    });
   }
+}
 
-  // Click event handler for checkboxes
-  $('.cb').click(function() {
-    updateChecklist();
-    saveCheckboxState();
-  });
+// Attach event listener to checkboxes
+$(".cb").on("change", updateChecklist);
 
-  // Load checkbox state when the page loads
-  $(document).ready(function() {
-    loadCheckboxState();
-    updateChecklist();
-  });
+// Restore checkbox state on page load
+restoreCheckboxState();
+updateChecklist();
+
 </script>
 
     <!-- Generate File Button -->

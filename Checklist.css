@@ -1,4 +1,4 @@
-input[class='checkgreen'] {
+input.checkgreen {
   border-radius: 2px;
   margin-bottom: -0.1%;
   appearance: none;
@@ -11,7 +11,7 @@ input[class='checkgreen'] {
   border: 1px solid #ccc;
 }
 
-.checkgreen:checked:before{
+input.checkgreen:checked:before {
   background-color: green;
   content: "✔";
   position: absolute;
@@ -26,7 +26,7 @@ input[class='checkgreen'] {
   align-items: center;
 }
 
-input[class='checkorange'] {
+input.checkorange {
   border-radius: 2px;
   margin-bottom: -0.1%;
   appearance: none;
@@ -39,7 +39,7 @@ input[class='checkorange'] {
   border: 1px solid #ccc;
 }
 
-.checkorange:checked:before{
+input.checkorange:checked:before {
   background-color: orange;
   content: "!";
   position: absolute;
@@ -54,7 +54,7 @@ input[class='checkorange'] {
   align-items: center;
 }
 
-input[class='checkred'] {
+input.checkred {
   border-radius: 2px;
   margin-bottom: -0.1%;
   appearance: none;
@@ -67,7 +67,7 @@ input[class='checkred'] {
   border: 1px solid #ccc;
 }
 
-.checkred:checked:before{
+input.checkred:checked:before {
   background-color: red;
   content: "✖";
   position: absolute;
@@ -84,4 +84,56 @@ input[class='checkred'] {
 
 ul{
   list-style-type: none
+}
+
+
+.dropdown-check-list .button1 {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-check-list .button1:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.dropdown-check-list .button1:active:after {
+  right: 8px;
+  top: 21%;
+}
+
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
+
+.dropdown-check-list.visible .button1 {
+  color: #0094ff;
+}
+
+.dropdown-check-list.visible .items {
+  display: block;
+}
+
+.dropdown-check-list {
+  display: inline-block;
 }
