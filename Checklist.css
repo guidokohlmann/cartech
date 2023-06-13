@@ -82,6 +82,10 @@ input.checkred:checked:before {
   align-items: center;
 }
 
+.lists{
+  display: flex;
+}
+
 ul{
   list-style-type: none
 }

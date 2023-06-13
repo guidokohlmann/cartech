@@ -14,54 +14,56 @@
 <body>
 <fieldset class="fieldset">
     <legend>Toevoegen</legend>
-    <div id="list1" class="dropdown-check-list" tabindex="100">
-      <span class='button1'>APK</span>
-      <ul class="items">
-        <li><input value="Reparatie" class="cb" type="checkbox" /><label for="checkbox32">Reparatie</label> </li>
-        <li><input value="Onderhoud" class="cb" type="checkbox" /><label for="checkbox22">Onderhoud</label> </li>
-        <li><input value="Storing" class="cb" type="checkbox" /><label for="checkbox32">Storing</label> </li>
-      </ul>
-    </div>
-    <div id="list2" class="dropdown-check-list" tabindex="100">
-      <span class='button1'>Proefrit</span>
-      <ul class="items">
-        <li><input value="Afstandsbediening/sleutelhuis" class="cb" type="checkbox" /><label for="checkbox32">Afstandsbediening/sleutelhuis</label> </li>
-        <li><input value="Rijeigenschappen" class="cb" type="checkbox" /><label for="checkbox22">Rijeigenschappen</label> </li>
-        <li><input value="Trillingen" class="cb" type="checkbox" /><label for="checkbox32">Trillingen</label> </li>
-        <li><input value="Motor" class="cb" type="checkbox" /><label for="checkbox32">Motor</label> </li>
-        <li><input value="Koppeling en versnellingsbak" class="cb" type="checkbox" /><label for="checkbox22">Koppeling en versnellingsbak</label> </li>
-        <li><input value="Remmen" class="cb" type="checkbox" /><label for="checkbox32">Remmen</label> </li>
-        <li><input value="Verlichting" class="cb" type="checkbox" /><label for="checkbox32">Verlichting</label> </li>
-      </ul>
-    </div>
-    <div id="list3" class="dropdown-check-list" tabindex="100">
-      <span class='button1'>In en om de auto</span>
-      <ul class="items">
-        <li><input value="Remmencontrole rollentestbank" class="cb" type="checkbox" /><label for="checkbox32">Remmencontrole rollentestbank</label> </li>
-        <li><input value="EOBD, 4gas, Roetmeting of Deeltjestest" class="cb" type="checkbox" /><label for="checkbox22">EOBD, 4gas, Roetmeting of Deeltjestest</label> </li>
-        <li><input value="Uitlezen op foutcodes (bij brandend lampje)" class="cb" type="checkbox" /><label for="checkbox32">Uitlezen op foutcodes (bij brandend lampje)</label> </li>
-        <li><input value="Tijdklok goed instellen" class="cb" type="checkbox" /><label for="checkbox32">Tijdklok goed instellen</label> </li>
-        <li><input value="AdBleu controleren (eventueel bijvullen)" class="cb" type="checkbox" /><label for="checkbox22">AdBleu controleren (eventueel bijvullen)</label> </li>
-        <li><input value="Verwarming, ventilatie, airconditioning: controleer werking" class="cb" type="checkbox" /><label for="checkbox32">Verwarming, ventilatie, airconditioning: controleer werking</label> </li>
-        <li><input value="Temperatuurmeting airco: uitstroom en omgeving noteren" class="cb" type="checkbox" /><label for="checkbox32">Temperatuurmeting airco: uitstroom en omgeving noteren</label> </li>
-        <li><input value=" Voorruit: ontwaseming controleren" class="cb" type="checkbox" /><label for="checkbox32"> Voorruit: ontwaseming controleren</label> </li>
-        <li><input value="Voorruit en spiegels: controleer op schade (barst/ster), staat en werking" class="cb" type="checkbox" /><label for="checkbox22">Voorruit en spiegels: controleer op schade (barst/ster), staat en werking </label> </li>
-        <li><input value="Verlichting voor- en achterzijde: controleer werking en beeld/afstelling" class="cb" type="checkbox" /><label for="checkbox32">Verlichting voor- en achterzijde: controleer werking en beeld/afstelling</label> </li>
-        <li><input value="Instrumenten, controlelampjes, binnenverlichting: controleer werking" class="cb" type="checkbox" /><label for="checkbox32">MotInstrumenten, controlelampjes, binnenverlichting: controleer werkingor</label> </li>
-        <li><input value="Ruitenwissers, sproeiers: controleer staat en werking" class="cb" type="checkbox" /><label for="checkbox22">Ruitenwissers, sproeiers: controleer staat en werking</label> </li>
-        <li><input value="Claxon: werking controleren" class="cb" type="checkbox" /><label for="checkbox32">Claxon: werking controleren</label> </li>
-        <li><input value="Pedaalrubbers/matten: controleren" class="cb" type="checkbox" /><label for="checkbox32">Pedaalrubbers/matten: controleren</label> </li>
-        <li><input value="Binnenzijde en gordels: bevestiging/staat controleren voorstoelen, achterbank en hemel" class="cb" type="checkbox" /><label for="checkbox32">Binnenzijde en gordels: bevestiging/staat controleren voorstoelen, achterbank en hemel</label> </li>
-        <li><input value="Ruitbediening: controleren" class="cb" type="checkbox" /><label for="checkbox22">Ruitbediening: controleren</label> </li>
-        <li><input value="Life-hamer: controleren aanwezigheid/monteren indien nodig" class="cb" type="checkbox" /><label for="checkbox32">Life-hamer: controleren aanwezigheid/monteren indien nodig</label> </li>
-        <li><input value="Interieurfilter: controleren" class="cb" type="checkbox" /><label for="checkbox32">Interieurfilter: controleren</label> </li>
-        <li><input value="Scharnieren, vanger, rubbers en sloten: controleren en smeren waar nodig (motorkap, portieren, achterklep)" class="cb" type="checkbox" /><label for="checkbox22">Scharnieren, vanger, rubbers en sloten: controleren en smeren waar nodig (motorkap, portieren, achterklep)</label> </li>
-        <li><input value="RemCarrosserie en chassis: visuele controle staat automen" class="cb" type="checkbox" /><label for="checkbox32">Carrosserie en chassis: visuele controle staat auto</label> </li>
-        <li><input value="Reservewiel: aanwezigheid, staat en bandenspanning controleren" class="cb" type="checkbox" /><label for="checkbox32">Reservewiel: aanwezigheid, staat en bandenspanning controleren</label> </li>
-        <li><input value="Profieldiepte: invullen" class="cb" type="checkbox" /><label for="checkbox22">Profieldiepte: invullen</label> </li>
-        <li><input value="Reparatieset banden: controleren op houdbaarheid" class="cb" type="checkbox" /><label for="checkbox32">Reparatieset banden: controleren op houdbaarheid</label> </li>
-        <li><input value="Kentekenplaten en houder: controleer de leesbaarheid, staat en bevestiging" class="cb" type="checkbox" /><label for="checkbox32">Kentekenplaten en houder: controleer de leesbaarheid, staat en bevestiging</label> </li>
-      </ul>
+    <div class="lists">
+      <div id="list1" class="dropdown-check-list" tabindex="100">
+        <span class='button1'>APK</span>
+        <ul class="items">
+          <li><input value="Reparatie" class="cb" type="checkbox" /><label for="checkbox32">Reparatie</label> </li>
+          <li><input value="Onderhoud" class="cb" type="checkbox" /><label for="checkbox22">Onderhoud</label> </li>
+          <li><input value="Storing" class="cb" type="checkbox" /><label for="checkbox32">Storing</label> </li>
+        </ul>
+      </div>
+      <div id="list2" class="dropdown-check-list" tabindex="100">
+        <span class='button1'>Proefrit</span>
+        <ul class="items">
+          <li><input value="Afstandsbediening/sleutelhuis" class="cb" type="checkbox" /><label for="checkbox32">Afstandsbediening/sleutelhuis</label> </li>
+          <li><input value="Rijeigenschappen" class="cb" type="checkbox" /><label for="checkbox22">Rijeigenschappen</label> </li>
+          <li><input value="Trillingen" class="cb" type="checkbox" /><label for="checkbox32">Trillingen</label> </li>
+          <li><input value="Motor" class="cb" type="checkbox" /><label for="checkbox32">Motor</label> </li>
+          <li><input value="Koppeling en versnellingsbak" class="cb" type="checkbox" /><label for="checkbox22">Koppeling en versnellingsbak</label> </li>
+          <li><input value="Remmen" class="cb" type="checkbox" /><label for="checkbox32">Remmen</label> </li>
+          <li><input value="Verlichting" class="cb" type="checkbox" /><label for="checkbox32">Verlichting</label> </li>
+        </ul>
+      </div>
+      <div id="list3" class="dropdown-check-list" tabindex="100">
+        <span class='button1'>In en om de auto</span>
+        <ul class="items">
+          <li><input value="Remmencontrole rollentestbank" class="cb" type="checkbox" /><label for="checkbox32">Remmencontrole rollentestbank</label> </li>
+          <li><input value="EOBD, 4gas, Roetmeting of Deeltjestest" class="cb" type="checkbox" /><label for="checkbox22">EOBD, 4gas, Roetmeting of Deeltjestest</label> </li>
+          <li><input value="Uitlezen op foutcodes (bij brandend lampje)" class="cb" type="checkbox" /><label for="checkbox32">Uitlezen op foutcodes (bij brandend lampje)</label> </li>
+          <li><input value="Tijdklok goed instellen" class="cb" type="checkbox" /><label for="checkbox32">Tijdklok goed instellen</label> </li>
+          <li><input value="AdBleu controleren (eventueel bijvullen)" class="cb" type="checkbox" /><label for="checkbox22">AdBleu controleren (eventueel bijvullen)</label> </li>
+          <li><input value="Verwarming, ventilatie, airconditioning: controleer werking" class="cb" type="checkbox" /><label for="checkbox32">Verwarming, ventilatie, airconditioning: controleer werking</label> </li>
+          <li><input value="Temperatuurmeting airco: uitstroom en omgeving noteren" class="cb" type="checkbox" /><label for="checkbox32">Temperatuurmeting airco: uitstroom en omgeving noteren</label> </li>
+          <li><input value=" Voorruit: ontwaseming controleren" class="cb" type="checkbox" /><label for="checkbox32"> Voorruit: ontwaseming controleren</label> </li>
+          <li><input value="Voorruit en spiegels: controleer op schade (barst/ster), staat en werking" class="cb" type="checkbox" /><label for="checkbox22">Voorruit en spiegels: controleer op schade (barst/ster), staat en werking </label> </li>
+          <li><input value="Verlichting voor- en achterzijde: controleer werking en beeld/afstelling" class="cb" type="checkbox" /><label for="checkbox32">Verlichting voor- en achterzijde: controleer werking en beeld/afstelling</label> </li>
+          <li><input value="Instrumenten, controlelampjes, binnenverlichting: controleer werking" class="cb" type="checkbox" /><label for="checkbox32">MotInstrumenten, controlelampjes, binnenverlichting: controleer werkingor</label> </li>
+          <li><input value="Ruitenwissers, sproeiers: controleer staat en werking" class="cb" type="checkbox" /><label for="checkbox22">Ruitenwissers, sproeiers: controleer staat en werking</label> </li>
+          <li><input value="Claxon: werking controleren" class="cb" type="checkbox" /><label for="checkbox32">Claxon: werking controleren</label> </li>
+          <li><input value="Pedaalrubbers/matten: controleren" class="cb" type="checkbox" /><label for="checkbox32">Pedaalrubbers/matten: controleren</label> </li>
+          <li><input value="Binnenzijde en gordels: bevestiging/staat controleren voorstoelen, achterbank en hemel" class="cb" type="checkbox" /><label for="checkbox32">Binnenzijde en gordels: bevestiging/staat controleren voorstoelen, achterbank en hemel</label> </li>
+          <li><input value="Ruitbediening: controleren" class="cb" type="checkbox" /><label for="checkbox22">Ruitbediening: controleren</label> </li>
+          <li><input value="Life-hamer: controleren aanwezigheid/monteren indien nodig" class="cb" type="checkbox" /><label for="checkbox32">Life-hamer: controleren aanwezigheid/monteren indien nodig</label> </li>
+          <li><input value="Interieurfilter: controleren" class="cb" type="checkbox" /><label for="checkbox32">Interieurfilter: controleren</label> </li>
+          <li><input value="Scharnieren, vanger, rubbers en sloten: controleren en smeren waar nodig (motorkap, portieren, achterklep)" class="cb" type="checkbox" /><label for="checkbox22">Scharnieren, vanger, rubbers en sloten: controleren en smeren waar nodig (motorkap, portieren, achterklep)</label> </li>
+          <li><input value="RemCarrosserie en chassis: visuele controle staat automen" class="cb" type="checkbox" /><label for="checkbox32">Carrosserie en chassis: visuele controle staat auto</label> </li>
+          <li><input value="Reservewiel: aanwezigheid, staat en bandenspanning controleren" class="cb" type="checkbox" /><label for="checkbox32">Reservewiel: aanwezigheid, staat en bandenspanning controleren</label> </li>
+          <li><input value="Profieldiepte: invullen" class="cb" type="checkbox" /><label for="checkbox22">Profieldiepte: invullen</label> </li>
+          <li><input value="Reparatieset banden: controleren op houdbaarheid" class="cb" type="checkbox" /><label for="checkbox32">Reparatieset banden: controleren op houdbaarheid</label> </li>
+          <li><input value="Kentekenplaten en houder: controleer de leesbaarheid, staat en bevestiging" class="cb" type="checkbox" /><label for="checkbox32">Kentekenplaten en houder: controleer de leesbaarheid, staat en bevestiging</label> </li>
+        </ul>
+      </div>
     </div>
   </fieldset>
 
