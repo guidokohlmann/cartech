@@ -1,3 +1,7 @@
+body{
+  background-color: #f5f5f5;
+}
+
 input.checkgreen {
   border-radius: 2px;
   margin-bottom: -0.1%;
@@ -84,6 +88,7 @@ input.checkred:checked:before {
 
 .lists{
   display: flex;
+  
 }
 
 ul{
