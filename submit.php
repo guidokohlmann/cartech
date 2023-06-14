@@ -8,13 +8,13 @@
     <input type="file" name="pdfFile" accept=".pdf">
     <input type="submit" value="Upload">
   </form>
-  
+
   <?php
 // MySQL database configuration
 $servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$database = "your_database";
+$username = "root";
+$password = "";
+$database = "checklist_cartech";
 
 // Connect to MySQL database
 $conn = new mysqli($servername, $username, $password, $database);
