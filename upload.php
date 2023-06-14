@@ -1,5 +1,5 @@
-<?php
-if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
+<?php 
+/*if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 {
     $fileName = $_FILES['userfile']['name'];
     $tmpName  = $_FILES['userfile']['tmp_name'];
@@ -30,5 +30,5 @@ if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
     }
 
     include 'library/closedb.php';
-}
+}*\
 ?>
