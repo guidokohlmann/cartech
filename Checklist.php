@@ -10,8 +10,23 @@
     <title>Cartech</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    
 </head>
 <body>
+
+<div id="page-container">
+    <div class="header">
+        <div class="triangle">
+            <img src="./wallpapers/cartechlogo.png" class="logo" alt="Logo" >
+            <div class="header-overlay">
+            <h2>Cartech</h2>
+            <p>Checklist aanmaken voor de klant</p>
+            </div>
+        </div>
+    </div>
+
+<div id="content-wrap">    
+
 <fieldset class="fieldset">
     <legend>Toevoegen</legend>
     <div class="lists">
@@ -156,6 +171,7 @@
     </div>
   </fieldset>
 
+
   <h4>Checklist:</h4>
   <ul id="checklist"></ul>
 
@@ -258,7 +274,7 @@ updateChecklist();
 </script>
 
     <!-- Generate File Button -->
-    <button id="generate-pdf">Generate PDF</button>
+    <button id="generate-pdf" class="button">Generate PDF</button>
 
     <script>
       
@@ -294,5 +310,7 @@ updateChecklist();
         generatePDFButton.addEventListener('click', generatePDF);
     });
     </script>
+
+</div>
 </body>
 </html>
