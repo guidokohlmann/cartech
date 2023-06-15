@@ -1,34 +1,47 @@
-<?php 
-/*if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
-{
-    $fileName = $_FILES['userfile']['name'];
-    $tmpName  = $_FILES['userfile']['tmp_name'];
-    $fileSize = $_FILES['userfile']['size'];
-    $fileType = $_FILES['userfile']['type'];
+<?php
+// MySQL database configuration
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "checklist_cartech";
 
-    $content = file_get_contents($tmpName);
-    $content = addslashes($content);
+// Connect to MySQL database
+$conn = new mysqli($servername, $username, $password, $database);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-    include 'library/config.php';
-    include 'library/opendb.php';
+// Check if a PDF file was uploaded
+if (isset($_FILES['pdfFile'])) {
+    $pdfFile = $_FILES['pdfFile'];
 
-    // Prepare the query using PDO
-    $query = "INSERT INTO upload (name, size, type, content) VALUES (:name, :size, :type, :content)";
-    $stmt = $pdo->prepare($query);
+    // Check for errors during the file upload
+    if ($pdfFile['error'] === UPLOAD_ERR_OK) {
+        $pdfName = $pdfFile['name'];
+        $pdfTmpName = $pdfFile['tmp_name'];
 
-    // Bind the parameters
-    $stmt->bindParam(':name', $fileName);
-    $stmt->bindParam(':size', $fileSize);
-    $stmt->bindParam(':type', $fileType);
-    $stmt->bindParam(':content', $content, PDO::PARAM_LOB);
+        // Read the PDF file content
+        $pdfContent = file_get_contents($pdfTmpName);
 
-    // Execute the query
-    if ($stmt->execute()) {
-        echo "<br>File $fileName uploaded<br>";
+        // Prepare the SQL statement
+        $sql = "INSERT INTO pdf_files (name, content) VALUES (?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ss", $pdfName, $pdfContent);
+
+        // Execute the SQL statement
+        if ($stmt->execute() === TRUE) {
+            echo "PDF file uploaded and stored in the database.";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+        // Close the prepared statement
+        $stmt->close();
     } else {
-        die('Error, query failed');
+        echo "Error uploading the PDF file.";
     }
+}
 
-    include 'library/closedb.php';
-}*\
+// Close the database connection
+$conn->close();
 ?>
