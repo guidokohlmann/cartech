@@ -32,7 +32,6 @@
       <legend>Toevoegen</legend>
       <div class="lists">
         <div id="list1" class="dropdown-check-list" tabindex="100">
-        <input type="text" placeholder="Opmerking:">
           <span class='button1'>APK</span>
           <ul class="items">
             <li><input value="Reparatie" class="cb" type="checkbox" /><label for="checkbox32">Reparatie</label> </li>
@@ -41,7 +40,6 @@
           </ul>
         </div>
         <div id="list2" class="dropdown-check-list" tabindex="100">
-        <input type="text" placeholder="Opmerking:">
           <span class='button1'>Proefrit</span>
           <ul class="items">
             <li><input value="Afstandsbediening/sleutelhuis" class="cb" type="checkbox" /><label for="checkbox32">Afstandsbediening/sleutelhuis</label> </li>
@@ -54,7 +52,6 @@
           </ul>
         </div>
         <div id="list3" class="dropdown-check-list" tabindex="100">
-        <input type="text" placeholder="Opmerking:">
           <span class='button1'>In en om de auto</span>
           <ul class="items">
             <li><input value="Remmencontrole rollentestbank" class="cb" type="checkbox" /><label for="checkbox32">Remmencontrole rollentestbank</label> </li>
@@ -84,7 +81,6 @@
           </ul>
         </div>
         <div id="list4" class="dropdown-check-list" tabindex="100">
-        <input type="text" placeholder="Opmerking:">
           <span class='button1'>Onder de moterkap</span>
           <ul class="items">
             <li><input value="Slangen en leidingen in motorruimte: controleren op bevestiging en beschadigingen" class="cb" type="checkbox" /><label for="checkbox32">Slangen en leidingen in motorruimte: controleren op bevestiging en beschadigingen</label> </li>
@@ -109,7 +105,6 @@
           </ul>
         </div>
         <div id="list5" class="dropdown-check-list" tabindex="100">
-        <input type="text" placeholder="Opmerking:">
           <span class='button1'>Onder de auto</span>
           <ul class="items">
             <li><input value="Onderzijde motor: controleren of lekkage van vloeistoffen" class="cb" type="checkbox" /><label for="checkbox32">Onderzijde motor: controleren of lekkage van vloeistoffen</label> </li>
@@ -132,7 +127,6 @@
           </ul>
         </div>
         <div id="list6" class="dropdown-check-list" tabindex="100">
-        <input type="text" placeholder="Opmerking:">
           <span class='button1'>Banden</span>
           <ul class="items">
             <li><input value="Bandenregistratie:" class="cb" type="checkbox" /><label for="checkbox32">Bandenregistratie:</label> </li>
@@ -156,7 +150,6 @@
           </ul>
         </div>
         <div id="list7" class="dropdown-check-list" tabindex="100">
-        <input type="text" placeholder="Opmerking:">
           <span class='button1'>Overige/Afwerking/extra services</span>
           <ul class="items">
             <li><input value="Onderhoudsinterval: resetten" class="cb" type="checkbox" /><label for="checkbox32">Onderhoudsinterval: resetten</label> </li>
@@ -167,7 +160,6 @@
           </ul>
         </div>
         <div id="list8" class="dropdown-check-list" tabindex="100">
-        <input type="text" placeholder="Opmerking:">
           <span class='button1'>Eindcontrole</span>
           <ul class="items">
             <li><input value="Toekomstige reparatie/onderhoudsadvies" class="cb" type="checkbox" /><label for="checkbox32">Toekomstige reparatie/onderhoudsadvies</label> </li>
@@ -182,15 +174,17 @@
   </div>
   </div>
   
-  <form action="/submit.php">
-    <label for="myfile">Kies een bestand:</label>
+  <form class="toevoegen" action="/submit.php">
+    <label for="myfile">Voeg een foto toe:</label>
     <input type="file" id="myfile" name="myfile"><br><br>
     <input type="submit" class="button">
   </form>
 
   <h4>Checklist:</h4>
   <ul id="checklist"></ul>
-
+  <div>
+    <textarea class="opmerking" type="text" placeholder="Opmerking:"></textarea>
+  </div>
 <script>
 //dropdown
 
@@ -234,7 +228,7 @@ function updateChecklist() {
     var isChecked = $(this).is(":checked");
 
     if (isChecked) {
-      $('#checklist').append('<li><input type="checkbox" class="checkred"> <input type="checkbox" class="checkorange"> <input type="checkbox" class="checkgreen">' + $(this).val() + '</li>');
+      $('#checklist').append('<li><input type="text" placeholder="Opmerking:"><input type="checkbox" class="checkred"> <input type="checkbox" class="checkorange"> <input type="checkbox" class="checkgreen">' + $(this).val() + '</li>');
     }
 
     // Update the corresponding checkbox in the fieldset
