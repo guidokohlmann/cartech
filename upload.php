@@ -45,3 +45,4 @@ if (isset($_FILES['pdfFile'])) {
 // Close the database connection
 $conn->close();
 ?>
+ 
