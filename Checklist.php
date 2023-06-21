@@ -174,7 +174,7 @@
   </div>
   </div>
   
-  <form class="toevoegen" action="/submit.php">
+  <form class="toevoegen" action="/upload.php" method="POST" enctype="multipart/form-data">
     <label for="myfile">Voeg een foto toe:</label>
     <input type="file" id="myfile" name="myfile"><br><br>
     <input type="submit" class="button">
