@@ -8,6 +8,10 @@ body{
   color: #000;
 }
 
+.toevoegen{
+  margin-top: 20px;
+}
+
 input.checkgreen {
   border-radius: 2px;
   margin-bottom: -0.1%;
@@ -99,6 +103,12 @@ input.checkred:checked:before {
 
 ul{
   list-style-type: none
+}
+
+.opmerking{
+  height: 75px;
+  width: 215px;
+  margin-left: 40px;
 }
 
 .dropdown-check-list .button1 {
@@ -235,7 +245,6 @@ body {
   font-size: 45px;
   padding: 0px;
   line-height: 0%;
-  
 }
 
 .header-overlay p{
@@ -269,4 +278,5 @@ body {
   margin: 4px 2px;
   cursor: pointer;
   background-color: red;
+  border-radius: 5px;
 }
