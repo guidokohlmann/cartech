@@ -17,7 +17,7 @@
 <div id="page-container">
     <div class="header">
         <div class="triangle">
-            <img src="./wallpapers/cartechlogo.png" class="logo" alt="Logo" >
+            <img src="./wallpapers/cartechlogo-removebg-preview.png" class="logo" alt="Logo" >
             <div class="header-overlay">
             <h2>Cartech</h2>
             <p>Checklist aanmaken voor de klant</p>
